@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name Huey)(type KiCad)(uri "$(KIPRJMOD)/modules")(options "")(descr ""))
+)
