@@ -1,4 +1,4 @@
-update=Sun 08 Apr 2018 02:09:50 PM MDT
+update=Sun 08 Apr 2018 02:51:46 PM MDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,6 +23,8 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
+[general]
+version=1
 [eeschema]
 version=1
 LibDir=lib
@@ -58,5 +60,3 @@ LibName28=contrib
 LibName29=valves
 LibName30=lib/huey
 LibName31=lib/MF_Connectors
-[general]
-version=1
