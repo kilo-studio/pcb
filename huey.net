@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/wyatt/Documents/Electronics/huey/pcb/huey.sch)
-    (date "Mon 09 Apr 2018 07:36:41 PM MDT")
+    (date "Mon 09 Apr 2018 09:00:00 PM MDT")
     (tool "Eeschema 4.0.5+dfsg1-4")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -34,7 +34,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 5ACAA4AD))
     (comp (ref CON1)
-      (value BARREL_JACK)
+      (value PJ-036AH-SMT-TR)
       (footprint Huey:PJ-036AH-SMT-TR)
       (fields
         (field (name "Digikey Part") CP-036AHPJCT-ND))
@@ -365,14 +365,14 @@
         (pin (num G0) (name GND) (type power_in))
         (pin (num G1) (name GND) (type power_in)))))
   (libraries
-    (library (logical transistors)
-      (uri /usr/share/kicad/library/transistors.lib))
-    (library (logical huey)
-      (uri /home/wyatt/Documents/Electronics/huey/pcb/lib/huey.lib))
     (library (logical device)
       (uri /usr/share/kicad/library/device.lib))
+    (library (logical transistors)
+      (uri /usr/share/kicad/library/transistors.lib))
     (library (logical conn)
       (uri /usr/share/kicad/library/conn.lib))
+    (library (logical huey)
+      (uri /home/wyatt/Documents/Electronics/huey/pcb/lib/huey.lib))
     (library (logical MF_Connectors)
       (uri /home/wyatt/Documents/Electronics/huey/pcb/lib/MF_Connectors.lib)))
   (nets
