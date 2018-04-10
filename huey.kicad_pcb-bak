@@ -3,7 +3,7 @@
   (general
     (links 39)
     (no_connects 0)
-    (area 52.728572 48.8 116.5 114.700001)
+    (area 54.924999 54.924999 105.075001 105.075001)
     (thickness 1.6)
     (drawings 13)
     (tracks 105)
@@ -665,7 +665,7 @@
     (fp_text reference CON1 (at 13 -6 270) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value BARREL_JACK (at -1.5 0 180) (layer F.SilkS) hide
+    (fp_text value PJ-036AH-SMT-TR (at -1.5 0 180) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 0 4.5) (end 14 4.5) (layer F.SilkS) (width 0.15))
