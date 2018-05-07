@@ -1,33 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
 LIBS:huey
 LIBS:MF_Connectors
 LIBS:huey-cache
@@ -37,8 +8,8 @@ $Descr User 9843 5906
 encoding utf-8
 Sheet 1 1
 Title "Huey Main Board"
-Date "2018-04-08"
-Rev "1.0"
+Date "2018-05-07"
+Rev "1.1"
 Comp "Kilo LLC"
 Comment1 ""
 Comment2 ""
@@ -115,15 +86,13 @@ F 3 "" H 3950 1650 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2700 2750 2700 2200
+	2700 2200 2700 3050
 Wire Wire Line
 	2700 2200 2400 2200
 Wire Wire Line
 	2400 2000 2800 2000
 Wire Wire Line
-	2800 2000 2800 2650
-Wire Wire Line
-	2900 2550 2900 2100
+	2900 2100 2900 2900
 Wire Wire Line
 	2900 2100 2400 2100
 Wire Wire Line
@@ -133,7 +102,7 @@ Wire Wire Line
 Wire Wire Line
 	2800 1000 2800 1900
 Wire Wire Line
-	2800 1900 2400 1900
+	2400 1900 3100 1900
 $Comp
 L GND #PWR03
 U 1 1 5ACAB088
@@ -584,4 +553,48 @@ F 3 "" H 4250 2700 50  0000 C CNN
 	1    4250 2700
 	1    0    0    -1  
 $EndComp
+$Comp
+L CONN_01X02 P9
+U 1 1 5AF070D5
+P 2750 3250
+F 0 "P9" H 2750 3400 50  0000 C CNN
+F 1 "CONN_01X02" V 2850 3250 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 2750 3250 50  0001 C CNN
+F 3 "" H 2750 3250 50  0000 C CNN
+	1    2750 3250
+	0    -1   1    0   
+$EndComp
+$Comp
+L CONN_01X02 P10
+U 1 1 5AF0715A
+P 3050 3250
+F 0 "P10" H 3050 3400 50  0000 C CNN
+F 1 "CONN_01X02" V 3150 3250 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 3050 3250 50  0001 C CNN
+F 3 "" H 3050 3250 50  0000 C CNN
+	1    3050 3250
+	0    -1   1    0   
+$EndComp
+Connection ~ 2700 2750
+Wire Wire Line
+	3100 1900 3100 3050
+Connection ~ 2800 1900
+Wire Wire Line
+	3000 3050 3000 2650
+Connection ~ 3000 2650
+Wire Wire Line
+	2800 2000 2800 2650
+Wire Wire Line
+	2800 3050 2800 2900
+Wire Wire Line
+	2800 2900 2900 2900
+Connection ~ 2900 2550
+Text Label 2450 2200 0    60   ~ 0
+DO
+Text Label 2450 2100 0    60   ~ 0
+SCLK
+Text Label 2450 2000 0    60   ~ 0
+DI
+Text Label 2450 1900 0    60   ~ 0
+CS
 $EndSCHEMATC
